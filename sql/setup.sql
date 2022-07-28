@@ -38,4 +38,11 @@ INSERT into nfls (id, name, city, state, url) values
         'Buffalo',
         'New York',
         'https://en.wikipedia.org/wiki/Buffalo_Bills'
+    ),
+    (
+        '5',
+        'Panthers',
+        'Charlotte',
+        'North Carolina',
+        'https://en.wikipedia.org/wiki/Carolina_Panthers'
     );

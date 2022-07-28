@@ -3,9 +3,9 @@ const setup = require('../data/setup');
 const request = require('supertest');
 const app = require('../lib/app');
 
-const { nfls } = require('../data/nfls.js');
+const { nfls } = require('../data/nfls');
 
-describe('backend-express-template routes', () => {
+describe('nfls routes', () => {
   beforeEach(() => {
     return setup(pool);
   });

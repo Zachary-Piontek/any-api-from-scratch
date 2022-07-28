@@ -1,8 +1,8 @@
 -- Use this file to define your SQL tables
 -- The SQL in this file will be executed when you run `npm run setup-db`
-DROP table if exists nfl;
+DROP table if exists nfls;
 
-CREATE table nfl (
+CREATE table nfls (
     id BIGINT NOT NULL,
     name VARCHAR NOT NULL,
     city VARCHAR NOT NULL,
@@ -10,7 +10,7 @@ CREATE table nfl (
     url VARCHAR NOT NULL
 );
 
-INSERT into nfl (id, name, city, state, url) values
+INSERT into nfls (id, name, city, state, url) values
     (
         '1',
         'Cardinals',

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles.css" rel="stylesheet" />
+    <title>AnyAPI</title>
+  </head>
+  <body>
+    <header>
+      <h1>NFL Teams</h1>
+    </header>
+    <main>
+      <p>This API uses a list of NFL teams as its resource. The routes are
+        as follows below.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Route</th>
+            <th>Method</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><pre>/nfls</pre></td>
+            <td>GET</td>
+            <td>Gets a list of NFL team' names and ids</td>
+            <td>
+              <a href="/nfls" target="_blank">List NFL teams</a>
+            </td>
+          </tr>
+          <tr>
+            <td><pre>/nfls/:id</pre></td>
+            <td>GET</td>
+            <td>
+              Returns the detail about the NFL teams matching the id in the parameter
+            </td>
+            <td>
+              <a href="/nfls/1" target="_blank">Get NFL team 1</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

@@ -3,19 +3,18 @@ const setup = require('../data/setup');
 const request = require('supertest');
 const app = require('../lib/app');
 
-const { nfls } = require('../data/nfls');
-
 describe('nfls routes', () => {
   beforeEach(() => {
     return setup(pool);
   });
 
   it('/nfls returns list of teams', async () => {
-    const res = await request(app).get('/nfls');
-    const expected = nfls.map((nfl) => {
-      return { id: nfl.id, name: nfl.name };
+    const resp = await request(app).get('/nfls');
+    expect(resp.body.length).toEqual(5);
+    expect(resp.body[0]).toEqual({
+      id: expect.any(String),
+      name: expect.any(String),
     });
-    expect(res.body).toEqual(expected);
   });
 
   it('/nfls/:id returns team details', async () => {
